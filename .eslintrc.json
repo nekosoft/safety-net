@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "compat"
+  ],
+  "rules": {
+    "semi": [2, "always"],
+    "no-unexpected-multiline": 2,
+    "compat/compat": 2
+  },
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "settings": {
+    "polyfills": ["fetch"],
+    "import/ignore": [".scss$"]
+  }
+}
